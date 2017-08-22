@@ -13,3 +13,96 @@
  *= require_tree .
  *= require_self
  */
+html {
+    background-color: #efefef;
+    color: #666;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+    color: #444;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.btn {
+    padding: 5px;
+    border: solid 1px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: 3px;
+}
+.btn-primary {
+    background-color: #ccf;
+}
+
+.letter {
+    font-family: monospace;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0.25em 0 0 0;
+    margin-bottom: 0.5em;
+}
+.letter-guessable {
+    background: #fff;
+}
+.letter-missed {
+    background: #fcc;
+}
+
+.keyboard-row {
+    padding-bottom: 0.5em;
+}
+.keyboard-key {
+    display: inline-block;
+    text-align: center;
+    padding: 0.25em;
+    width: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ddd;
+    border: solid 1px #ccc;
+    cursor: pointer;
+}
+.keyboard-key:disabled {
+    cursor: default;
+}
+.keyboard-row form {
+    display: inline-block;
+}
+.keyboard-row2 {
+    padding-left: 1em;
+}
+.keyboard-row3 {
+    padding-left: 2em;
+}
+
+.lives-remaining {
+    display: inline;
+    padding-left: 0;
+    list-style-type: none;
+}
+.lives-life {
+    display: inline;
+    margin-bottom: 1em;
+    color: #c22;
+}
+.lives-life-remaining {
+    color: #2c2;
+}
+section + section {
+    margin-top: 1em;
+}
+hr {
+    height: 1px;
+    color: #ddd;
+    background-color: #ddd;
+    border: none;
+}

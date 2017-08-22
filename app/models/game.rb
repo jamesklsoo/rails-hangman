@@ -12,7 +12,7 @@ class Game < ApplicationRecord
   def letters
     word.chars.map do |c|
       guessed = already_guessed?(c)
-      guessable = (c =~ /[a-z]/i && !already_guessed? (c))
+      guessable = (c =~ /[a-z]/i && !already_guessed?(c))
       Letter.new(c, guessed, guessable)
     end
   end
